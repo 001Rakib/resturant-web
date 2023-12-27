@@ -12,6 +12,11 @@ const MenuCategory = ({ items, title, coverImg }) => {
           <MenuItem key={item._id} item={item}></MenuItem>
         ))}
       </div>
+      <div className="text-center">
+        <button className="btn no-animation btn-outline border-0 border-b-4">
+          ORDER YOUR FAVOURITE FOOD
+        </button>
+      </div>
     </div>
   );
 };
