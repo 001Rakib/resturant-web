@@ -29,7 +29,7 @@ const NavBar = () => {
         <Link to={"/signUp"}>Sign Up</Link>
       </li>
       <li>
-        <Link to={"/"}>
+        <Link to={"/dashboard/cart"}>
           {" "}
           <button className="btn">
             <FaCartPlus></FaCartPlus>
