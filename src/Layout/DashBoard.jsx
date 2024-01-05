@@ -7,11 +7,12 @@ import { LuCalendarHeart } from "react-icons/lu";
 import { IoIosRestaurant } from "react-icons/io";
 import useCart from "../Hooks/useCart";
 import { MdEmail } from "react-icons/md";
+import useAdmin from "../Hooks/useAdmin";
 
 const DashBoard = () => {
   const [cart] = useCart();
 
-  const isAdmin = true;
+  const [isAdmin] = useAdmin();
   return (
     <div className="flex">
       {/* dashboard sidebar */}
