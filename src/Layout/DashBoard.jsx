@@ -7,6 +7,7 @@ import { LuCalendarHeart } from "react-icons/lu";
 import { IoIosRestaurant } from "react-icons/io";
 import useCart from "../Hooks/useCart";
 import { MdEmail } from "react-icons/md";
+import { GiWallet } from "react-icons/gi";
 import useAdmin from "../Hooks/useAdmin";
 
 const DashBoard = () => {
@@ -61,10 +62,16 @@ const DashBoard = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to={"/dashboard/paymentHistory"}>
+                  <GiWallet></GiWallet> Payment History
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to={"/dashboard/cart"}>
                   <FaCartShopping></FaCartShopping>My Cart({cart.length})
                 </NavLink>
               </li>
+
               <li>
                 <NavLink to={"/dashboard/review"}>
                   <MdOutlineStarBorder />
